@@ -1,0 +1,37 @@
+:root {
+  --blue-text: rgba(33, 150, 243, 1);
+
+  --black-text: rgba(33, 33, 33, 1);
+
+  --grey-text: rgba(117, 117, 117, 1);
+
+  --white-text: rgba(255, 255, 255, 1);
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+
+  --background-white: rgba(255, 255, 255, 1);
+
+  --background-black-grey: rgba(47, 48, 58, 1);
+
+  --background-white-grey: rgba(245, 244, 250, 1);
+
+  --header-border-line: rgba(236, 236, 236, 1);
+
+  --box-shadow-btn: rgba(0, 0, 0, 0.15);
+
+  --modal-form-label: #757575;
+
+  --item-border: 30px;
+
+  --border-card: rgba(238, 238, 238, 1);
+
+  --box-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  --hero-gradient: rgba(47, 48, 58, 0.4);
+
+  --client-color: rgb(69%, 69%, 73%, 1);
+
+  --footerlink-bg-color: rgba(255, 255, 255, 0.1);
+
+  --bazier: cubic-bezier(0.4, 0, 0.2, 1);
+}

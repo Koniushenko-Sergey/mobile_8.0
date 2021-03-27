@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./css/modern-normalize.css">
+        <link rel="stylesheet" href="./css/main.min.css">
+    
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <nav class="header__nav">
+            <a href="#" class="logo">
+                <span class="logo__subject">Web</span>Studio
+            </a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu__btn correct__btn" width="24px" height="16px" aria-label="Переключатель мобильного меню">
+                    <use class="icon__menu" href="./img/dop-img/icons.svg#menu-mobile"></use>
+                </svg>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="./index.html" class="nav__link">Студия</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./portfolio.html" class="nav__link nav__link--current"> <span class="link-color-studio">Портфолио</span></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="contacts__list">
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link"> 
+
+                        <svg class="contacts__icon " width="16px" height="12px">
+                            <use href="./img/icon-sprite.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com </a>
+
+            </li>
+            <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__iconn" width="10px" height="16px">
+                            <use href="./img/icon-sprite.svg#icon-Tel"></use>
+                        </svg>
+                        +38 096 111 11 11
+
+                    
+                </a></li>
+        </ul>
+    </div>
+</header>
+
+    <main>
+       <section class="card__section">
+        <div class="container">
+           <h1 class="visually-hidden">Наши проекты</h1>
+           <ul class="filters__list">
+                <li class="filters__item">
+                    <button class="filters__button">Вcе</button></li>
+                <li class="filters__item"> 
+                    <button class="filters__button">Веб-сайты</button></li>
+                <li class="filters__item">
+                    <button class="filters__button">Приложения</button></li>
+                <li class="filters__item">
+                    <button class="filters__button">Дизайн</button></li>
+                <li class="filters__item">
+                    <button class="filters__button">Маркетинг</button></li>
+            </ul>
+        
+              <ul class="card__list">
+                 
+                  <li class="card__item">
+                     <a href="#" class="card__link">
+                    <div class="card__thumb">
+                    
+                         <img 
+                         src="./img/logo.jpg" alt="img"
+                         srcset="./img/dop-img/filters/img@2x.jpg">
+                          <div class="overlay">
+                              <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.</p>
+                          </div>
+                    </div>
+                
+                    <div class="card__container">
+                       <h3 class="card__description">Технокряк</h3>
+                        <p class="card__text">Веб-сайт</p>
+                        
+                        </div>
+                        </a>
+                  </li>
+
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img 
+                      src="./img/logo2.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img2@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Калоритный и яркий дизайн постера для баскетбольного матча который состоялся между командами "New Orlean & Golden Star".</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description"> Постер New Orlean vs Golden Star</h3>
+                          <p class="card__text">Дизайн</p>
+                    </div>
+                    </a>
+                  </li>                          
+                  
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo3.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img3@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Очень вкусно, комфортно и весело!» - именно так отзываются о модном и современном ресторане «Seafood» его
+                            посетители. Он идеально подходит для ценителей рыбы и морепродуктов.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Ресторан Seafood</h3>
+                          <p class="card__text">Приложение</p>
+                    </div>
+                    </a>
+                  </li>  
+              
+
+            
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo4.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img4@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Prime – это сервис прослушивания музыки в отличном качестве как с экрана компьютера, так и с любого мобильного
+                            девайса. Как и в случае с основным Prime, музыкальный Prime позволяет начать свое знакомство с бесплатного 30-дневного
+                            периода.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Проект Prime</h3>
+                          <p class="card__text">Маркетинг</p>
+                    </div>
+                    </a>
+                  </li>                          
+                  
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo5.1.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img5@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Box один из лидеров рынка облачных файлохранилищ для бизнеса с клиентами калибра Procter & Gamble и General Electric.
+                            Приложение Box Drive создает
+                            локальный диск на компьютере, синхронизированный с вашим облачным аккаунтом.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Проект Boxes</h3>
+                          <p class="card__text">Приложение</p>
+                    </div>
+                    </a>
+                  </li>                          
+                  
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo5.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img6@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Inspiration has no borders. 
+                                See which countries really walked the walk this year and took the most steps in the 2018
+                            Fitbit Year in Review:.</p>
+                        </div>
+                    </div>
+                        <div class="card__container">
+                      <h3 class="card__description">Inspiration has no Borders</h3>
+                          <p class="card__text">Веб-сайт</p>
+                        </div>
+                    </a>
+                  </li> 
+              
+
+            
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo6.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img7@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Специальные издания широко используются при выпуске музыки, 
+                                фильмов и видеоигр. Компании широко используют специальные
+                            издания и постепенно их улучшают, чтобы спрос оставался.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Издание Limited Edition</h3>
+                          <p class="card__text">Дизайн</p>
+                    </div>
+                    </a>
+                  </li>                          
+                  
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo7.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img8@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Project Lab - это 
+                            Знакомство с ассортиментом продукции 
+                            • Профессиональная разработка проектов 
+                            • Представление комплексной ценности решения.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Проект LAB</h3>
+                          <p class="card__text">Маркетинг</p>
+                    </div>
+                    </a>
+                  </li>                          
+                  
+                  <li class="card__item">
+                    <a href="#" class="card__link">
+                    <div class="card__thumb">
+                      <img src="./img/logo8.jpg" alt="img"
+                      srcset="./img/dop-img/filters/img9@2x.jpg">
+                        <div class="overlay">
+                            <p class="overlay__text">Это бесплатное приложение, разработанное специально для владельцев малого бизнеса. 
+                                Легко общайтесь с клиентами,
+                            рассказывайте о своих товарах и услугах и отвечайте на вопросы о покупках в одном удобном приложении.</p>
+                        </div>
+                    </div>
+                    <div class="card__container">
+                      <h3 class="card__description">Growing Business</h3>
+                          <p class="card__text"> Приложение</p>
+                    </div>
+                    </a>
+                  </li>                          
+                 
+              </ul>   
+
+        </div>
+          </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="thumb__footer">
+                <div class="adress__container ">
+                    <a href="#" class="logo__footer"><span class="logo__subject">
+                            Web</span>Studio
+                    </a>
+                    <address>
+    
+                        <ul class="footer__contacts">
+    
+                            <li class="footer__item">
+                                <a href="#" class="footer__street"> г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+    
+                            <li class="footer__item">
+                                <a href="mailto:info@devstudio.com" class="footer__social"> info@devstudio.com </a>
+                            </li>
+    
+                            <li class="footer__item">
+                                <a href="tel:+38009611111111" class="footer__social">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="join__container">
+                    <p class="join__paragraph">Присоединяйтесь</p>
+    
+                    <ul class="footer__social--icon">
+                        <li class="footer__icon">
+                            <a href="#">
+                                <div class="box__container">
+                                    <svg class="svg__join" width="20px" height="20px">
+                                        <use href="./img/icon-sprite.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </div>
+                            </a>
+    
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#">
+                                <div class="box__container">
+                                    <svg class="svg__join" width="20px" height="20px">
+                                        <use href="./img/icon-sprite.svg#icon-twiter"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#">
+                                <div class="box__container">
+                                    <svg class="svg__join" width="20px" height="20px">
+                                        <use href="./img/icon-sprite.svg#icon-facebook--"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#">
+                                <div class="box__container">
+                                    <svg class="svg__join" width="20px" height="20px">
+                                        <use href="./img/icon-sprite.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+    
+    
+            <form class="footer__form" autocomplete="on" novalidate>
+                <p class="form__paragraph">Подпишись на рассылку</p>
+                <div class="form__container">
+                    <input class="form__input" type="email" name="email" placeholder="E-mail">
+                    <button class="form__buttom" type="submit">
+                        Подписаться
+    
+                        <svg class="form__buttom--svg" width="24" height="24">
+                            <use href="./img/modal-icons.svg#iconicon-podpisatsa"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+    
+    
+        </div>
+    
+    
+    
+    </footer>
+
+    <!--mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu__icon" width="19px" height="19px">
+                <use href="./img/dop-img/icons.svg#close-mobile"></use>
+            </svg>
+        </button>
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts mobile-nav__list">
+            <li class="mobile-contacts__item mobile-nav__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item mobile-nav__item">
+                <a href="mailto:info@devstudio.com"
+                    class="mobile-contacts__link mobile-contacts__link--email">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-social mobile-nav__list">
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Instagram
+                    <span class="link__element">&verbar;</span></a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Twitter
+                    <span class="link__element">&verbar;</span></a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Facebook
+                    <span class="link__element">&verbar;</span></a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+        </script>
+    <script src="./js/mobile-menu.js"></script>
+    
+</body>
+</html>

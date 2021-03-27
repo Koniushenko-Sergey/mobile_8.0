@@ -1,0 +1,178 @@
+/*Секция-кнопок  */
+
+.filters__item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.filters__button {
+  outline: none;
+  border: none;
+  background-color: var(--background-white-grey);
+  border-radius: 4px;
+  width: 128px;
+  height: 38px;
+  color: var(--back-text);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 250ms var(--bazier);
+
+  &:hover {
+    background-color: var(--blue-text);
+    box-shadow: var(--box-team-shadow);
+    cursor: pointer;
+    color: var(--white-text);
+  }
+
+  &:focus {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+  }
+}
+
+.card__section {
+  font-family: Roboto, sans-serif;
+  justify-content: center;
+  padding: 60px 0;
+  margin: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 94px 0;
+  }
+}
+
+.filters__list {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
+
+  .filters__item:not(:last-child) {
+    padding-bottom: 9px;
+  }
+}
+
+.filters__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+/*Секция-карточек технокряка  */
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--black-text);
+  letter-spacing: 0.06em;
+  outline: none;
+}
+
+.card__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.card__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__item {
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-card);
+  box-sizing: border-box;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 354px;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 270px;
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color: var(--white-text);
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--bazier);
+  transform: translateY(101%);
+}
+
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__link {
+  transition: color var(--transition-function);
+
+  &:hover {
+    box-shadow: var(--box-team-shadow);
+  }
+}
+
+.card__container {
+  padding: 20px 24px;
+}

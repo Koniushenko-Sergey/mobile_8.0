@@ -1,0 +1,138 @@
+.team {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-white-grey);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  text-align: center;
+}
+
+.team__box {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.card {
+  margin-bottom: 16px;
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__item {
+  background-color: var(--white-text);
+  box-shadow: var(--box-team-shadow);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 420px) and (max-width: 767px) {
+    margin-top: -30px;
+    max-width: 450px;
+    margin-left: -30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    max-width: 450px;
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 354px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 270px;
+  }
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.team__function {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--grey-text);
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 0 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 0 30px;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  color: var(--client-color);
+  border-radius: 50%;
+
+  transition: 250ms var(--bazier);
+
+  &:hover {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+  }
+}
+
+.team__icons {
+  fill: currentColor;
+}
